@@ -327,6 +327,12 @@ header {
 /*---------------------------- Section Choise ----------------------*/
 .choise-list-btn {
   list-style-type: none;
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .choise-btn {
@@ -341,6 +347,9 @@ header {
   letter-spacing: 0.04em;
   list-style-type: none;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .choise-btn:hover,
 .choise-btn:focus {
@@ -349,6 +358,12 @@ header {
 }
 .choise-list-photo {
   list-style-type: none;
+  border: 1px solid #e7e9fc;
+  padding-left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .choise-link {
