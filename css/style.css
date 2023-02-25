@@ -36,11 +36,12 @@ header {
 .container {
   padding: 0px 15px;
   margin: 0 auto;
-  width: 1158px;
+  max-width: 1158px;
 }
 .header .container {
   display: flex;
 }
+
 /*---------------------------- Studio ---------------------------*/
 /*---------------------------- header ************************x2 */
 
@@ -68,13 +69,19 @@ header {
 }
 .header-list {
   display: flex;
-  margin-top: 24px;
+  padding-top: 24px;
+  margin: 0;
   gap: 40px;
+  padding-left: 0;
 }
 
 .header-item {
   list-style-type: none;
   display: flex;
+}
+.header-address .header-list {
+  margin: 0;
+  padding: 24px 0px;
 }
 .header-navigation {
   display: flex;
@@ -119,6 +126,10 @@ header {
 /*--------------------- Banner -------------------------*/
 .banner {
   background-color: var(--title-color);
+  margin: 0 auto;
+  display: flex;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .banner-title {
   font-weight: 700;
@@ -126,6 +137,10 @@ header {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
+  padding-bottom: 48px;
+  margin: 0 auto;
+  width: 496px;
 }
 .banner-btn {
   border: 0px;
@@ -138,6 +153,13 @@ header {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: flex;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 .banner-btn:hover,
 .banner-btn:focus {
@@ -150,10 +172,23 @@ header {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
-/* Four Section */
-
+/*----------------------------- Four Section--------------------------- */
+.four-section {
+  display: flex;
+  margin: 0;
+  padding: 120px 0;
+}
+.four-section-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0 auto;
+}
 .four-section-item {
   list-style-type: none;
+  display: flex;
+  margin: 0 auto;
 }
 .four-section-title {
   font-weight: 500;
@@ -161,6 +196,8 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .four-section-text {
   font-weight: 400;
@@ -168,41 +205,72 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  width: 264px;
+  margin: 0 auto;
 }
 /*-----------------------What are we doing -----------------------*/
-
+.case {
+  margin-bottom: 0;
+  padding: 120px 0;
+}
 .case-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 .case-list {
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  margin-top: 72px;
+  margin-bottom: 0;
 }
 /*---------------------------------- Our team--------------------  */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin: 0 auto;
+  padding-bottom: 72px;
+  display: flex;
+  justify-content: center;
 }
 .team-list {
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  margin: 0 auto;
 }
 .team-item {
   background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% -72) / 4);
+  margin: 0 auto;
 }
+
 .team-user {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin: 0 auto 8px;
+  display: flex;
+  justify-content: center;
 }
 .team-text {
   font-weight: 400;
@@ -210,10 +278,18 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
+.team-content {
+  padding: 32px 16px;
+}
+
 /*---------------------------- Footer ----------------------------*/
 .footer {
   background-color: var(--title-color);
+  padding: 100px;
 }
 .footer-link {
   text-decoration: none;
@@ -225,6 +301,8 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  margin: 0 auto;
+  display: flex;
 }
 .footer-span {
   font-family: "Raleway", sans-serif;
@@ -242,6 +320,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  display: flex;
+  width: 264px;
 }
 /*--------------------------------- Portfolio---------------------- */
 /*---------------------------- Section Choise ----------------------*/
